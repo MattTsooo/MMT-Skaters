@@ -1,0 +1,4 @@
+*.png
+*.mp4
+backend/node_modules/
+backend/package-lock.json

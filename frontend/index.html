@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "icon" type = "image/png" href = "MMT_background.png">
+  <link rel = "apple-touch-icon" href = "MMT.png">
+  <link rel = "stylesheet" href = "style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <title>MMT & Skaters | Skating Lessons</title>
+
+</head>
+<body>
+  <header class="header">
+    <nav class="logo-nav">
+      <a href="#home">
+        <img src="MMT.png" alt = "MMT">
+      </a>
+    </nav>
+    <h1>Melody and Megan Tso & Skaters</h1>
+    <nav class="page-nav">
+      <a href="#about">About</a>
+      <a href="#booking">Book</a>
+    </nav>
+  </header>
+  
+  <section class="hero" id="home">
+    <video autoplay muted loop playsinline id="heroVideo">
+      <source src="home-skating.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+      <h2>Glide with Confidence</h2>
+      <p>Sisters who skate, and now teach skating.</p>
+      <a href="#booking"><button class="btn">Book a Lesson</button></a>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <div class = "about-container">
+      <div class = "about-text">
+        <h2>About Us</h2>
+        <p>We’re Melody and Megan — two sisters who fell in love with ice skating at just four years old. From our first spins on the local rink to years of competitive skating, we’ve grown up with ice under our feet and passion in our hearts. Today, we’re proud to share that passion by coaching skaters of all ages — from first-timers to aspiring performers.</p>
+        <p>Our lessons are fun, personalized, and designed to build both skill and confidence. Whether you’re dreaming of graceful spins or just want to stay on your feet — we’ll help you find your rhythm on the ice!</p>
+      </div>
+
+      <div class = "about-videos">
+        <video src = "home-skating.mp4" controls muted loop></video>
+        <video src = "home-skating.mp4" controls muted loop></video>
+      </div>
+    </div>
+    
+  </section>
+
+
+  <section id="booking">
+    <h2>Book Your Lesson</h2>
+    <form id="bookingForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+      <select id="lessonType" required>
+        <option value="">Select Lesson Type</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+      <input type="date" id="date" required>
+      <textarea id="message" rows="4" placeholder="Any special requests?"></textarea>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class = "footer-container">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mmtskaters@gmail.com" target = "blank" rel = "noopener noreferrer">
+                <p>mmtskaters@gmail.com</p>
+            </a>
+        </div>
+
+        <div class = "footer-section">
+            <h3>Follow Us</h3>
+            <div class = "social-media-icons">
+                <a href = "https://www.instagram.com/mmt_skaters/" target = "blank" rel = "noopener noreferrer">
+                    <img src = "insta.png" alt = "MMT Instagram" class = "icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    <p class = "footer-bottom"> 
+      <img src="MMT.png" alt="footer-logo">
+        © 2024 Melody and Megan Tso & Skaters | Made with 💙 for skaters everywhere
+    </p>
+
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
