@@ -222,39 +222,84 @@ section {
 
 /* Booking Section */
 #booking {
-    background: #f0f8ff;
-    padding: 80px 10%;
+    background: white;
+    padding: 100px 10%;
     border-top: 5px solid #0077ff;
 }
 
-#booking h2 {
-    color: black;
-    margin-bottom: 30px;
+.booking-header {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-form {
-    max-width: 600px;
+.booking-header h2 {
+    color: var(--navy);
+    font-size: clamp(2em, 4vw, 2.8em);
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+.booking-header p{
+    color: #666;
+    font-size: 1.1em;
+}
+
+form{
+    max-width: 700px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
 }
 
-#booking h5{
-    text-align: left;
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-input, select, textarea {
-    padding: 12px;
-    border: 2px solid #0077ff;
-    border-radius: 10px;
+.form-group label{
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 1em;
+}
+
+.form-group small{
+    color: #888;
+    font-size: .85em;
+    margin-top: 5px;
+}
+
+input, select, textarea{
+    padding: 15px 20px;
+    border: 2px solid #e0e0d0;
+    border-radius: 15px;
     font-size: 1em;
     outline: none;
-    transition: all 0.3s ease;
+    transition: all .3s ease;
+    font-family: 'Poppins', sans-serif;
 }
 
-input:focus, select:focus, textarea:focus {
-    box-shadow: 0 0 8px #0077ff;
+input:focus, select:focus, textarea:focus{
+    border-color: var(--deep-blue);
+    box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.1);
+}
+
+textarea{
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-loading{
+    display: none;
+}
+
+.btn-submit.loading .btn-text{
+    display: none;
+}
+
+.btn-submit.loading .btn-loading{
+    display: inline;
 }
 
 footer {
