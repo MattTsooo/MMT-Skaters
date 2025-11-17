@@ -55,45 +55,79 @@
 
 
   <section id="booking">
-    <h2>Book Your Lesson</h2>
+    <div class ="booking-header">
+      <h2>Ready to Hit the Ice?</h2>
+      <p>Book your personalized lesson and take the first step toward skating sucess</p>
+    </div>
+   
     <form id="bookingForm">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Email Address" required>
-      <select id="lessonType" required>
-        <option value="">Select Lesson Type</option>
-        <option>Beginner</option>
-        <option>Intermediate</option>
-        <option>Advanced</option>
-      </select>
-      <input type="date" id="date" required>
-      <textarea id="message" rows="4" placeholder="Any special requests?"></textarea>
-      <button class="btn" type="submit">Submit</button>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="John Smith" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="JohnSmith@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number (Optional)</label>
+        <input type="tel" id="phone" placeholder="(123) 456 7890">
+      </div>
+
+      <div class="form-group">
+        <label for="lessonType">Experience Level</label>
+        <select id="lessionType" required>
+          <option value="">Choose your level</option>
+          <option value="First Time">Never skated before</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate - Basic spins, crossovers, etc</option>
+          <option value="Advanced">Advanced - Jumps / Competition prep</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" required>
+        <small>*Subject to availability - we'll confirm via email</small>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Tell Us About Your Goals</label>
+        <textarea id="message" rows="4" placeholder="What would you like to work on? Any concerns?"></textarea>
+      </div>
+
+      <button class="btn btn-submit" type="sumbit">
+        <span class="btn-text">Book My Lesson</span>
+        <span class="btn-loading">Sending...</span>
+      </button>
     </form>
   </section>
 
   <footer>
     <div class = "footer-container">
         <div class="footer-section">
-            <h3>Contact Us</h3>
+            <h3>Get in Touch</h3>
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mmtskaters@gmail.com" target = "blank" rel = "noopener noreferrer">
                 <p>mmtskaters@gmail.com</p>
             </a>
         </div>
 
         <div class = "footer-section">
-            <h3>Follow Us</h3>
+            <h3>Follow Us!</h3>
             <div class = "social-media-icons">
                 <a href = "https://www.instagram.com/mmt_skaters/" target = "blank" rel = "noopener noreferrer">
-                    <img src = "insta.png" alt = "MMT Instagram" class = "icon">
+                    <img src = "insta.png" alt = "Instagram" class = "icon">
                 </a>
             </div>
         </div>
     </div>
-    <p class = "footer-bottom"> 
-      <img src="MMT.png" alt="footer-logo">
-        © 2024 Melody and Megan Tso & Skaters | Made with 💙 for skaters everywhere
-    </p>
 
+    <div class = "footer-bottom"> 
+      <img src="MMT.png" alt="MMT Logo">
+        <p>© 2024 MMT Skaters | Crafted with ❄️ by skaters, for skaters</p>
+    </div>
   </footer>
 
   

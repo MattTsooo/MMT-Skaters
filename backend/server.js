@@ -56,7 +56,7 @@ app.post('/book', async (req, res) => {
       from: process.env.EMAIL_USER,
       to: email,
       subject: 'Lesson Booking Confirmed - MMT Skaters',
-      text: `Hi ${name},\n\nThank you for booking with MMT Skaters! We'll reach out soon to confirm your lesson.\n\n- MMT Skaters`
+      text: `Hi ${name},\n\nThank you for booking with MMT Skaters! We'll reach out soon to confirm your lesson, finalize a time and date.\n\n- MMT Skaters`
     });
 
     res.status(200).json({ message: 'Emails sent successfully' });
