@@ -3,3 +3,4 @@
 *.mp4
 backend/node_modules/
 **/package-lock.json
+.DS_Store
