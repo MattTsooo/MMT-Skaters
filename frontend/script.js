@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const formData = {
         name: document.getElementById("name").value.trim(),
         email: document.getElementById("email").value.trim(),
+        phone: document.getElementById("phone").value.trim() || "",
         lessonType: document.getElementById("lessonType").value,
         date: document.getElementById("date").value,
         message: document.getElementById("message").value.trim(),
@@ -41,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
   
         if (res.ok) {
-          alert("🎉 Lesson Booked! Check your email for confirmation.", "success");
+          showNotification("🎉 Lesson Booked! Check your email for confirmation.", "success");
           form.reset();
 
           setTimeout(() => {
@@ -76,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     position: fixed;
     top: 100px;
     right: 30px;
-    background: ${type} === 'success' ? '#10b981' : '#ef4444'};
+    background: ${type === 'success' ? '#10b981' : '#ef4444'};
     color: white;
     padding: 20px 30px;
     border-radius: 15px;

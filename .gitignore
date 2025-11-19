@@ -1,7 +1,7 @@
-# .gitignore
 *.png
 *.mp4
 backend/node_modules/
-**/package-lock.json
+backend/.env
+backend/package.json
+backend/package-lock.json
 .DS_Store
-backend/.env/
